@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Review</title>
+    <!-- Icon -->
+    <link rel="Icon" href="images/logo@2x.png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Animate Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+
+<!-- Header -->
+  <header>
+      <img src="images/wraper.png" alt="game background" class="w-100">
+  </header>
+<!-- Navbar -->
+  <nav>
+      <div class="container">
+        <div  class="navbar sticky-top navbar-expand-lg mb-5 mx-auto col-lg-10 col-md-10 px-2">
+          <div class="logo p-2">
+            <h1 class="navbar-brand mb-0 text-white fw-lighter d-inline-flex align-items-center">
+              <img src="images/logo@2x.png" alt="logo" width="40">
+              GAME REVIEWS
+            </h1>
+          </div>
+
+          <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa-solid fa-bars"></i>
+          </button>
+        
+          <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item ms-2">
+                <a class="nav-link active" aria-current="page" href="#" data-category="mmorpg">MMORPG</a>
+              </li>
+              <li class="nav-item ms-2">
+                <a class="nav-link" href="#" data-category="shooter">SHOOTER</a>
+              </li>
+              <li class="nav-item ms-2">
+                <a class="nav-link" href="#" data-category="sailing">SAILING</a>
+              </li>
+              <li class="nav-item ms-2">
+                <a class="nav-link" href="#" data-category="permadeath">PERMADEATH</a>
+              </li>
+              <li class="nav-item ms-2">
+                <a class="nav-link" href="#" data-category="superhero">SUPERHERO</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#" data-category="pixel">PIXEL</a>
+              </li>             
+            </ul>
+          </div>
+        </div>
+      </div>
+  </nav>
+    
+<!-- Games -->
+  <section>
+      <div id="games">
+        <div class="container animate__animated animate__zoomIn">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4" id="gamesRow">
+            
+          </div>
+        </div>
+
+      </div>
+  </section>
+
+  <section class="details position-fixed top-0 start-0 w-100 d-none" id="details">
+    <div class="container">
+        <header class="hstack justify-content-between">
+            <h1 class="text-center h3 py-4">Details Game</h1>
+            <button class="btn-close btn-close-white" id="btnClose"></button>
+        </header>
+
+        <div class="row g-4 animate__animated animate__bounceInDown" id="detailsContent">
+          
+        </div>
+    </div>
+</section>
+
+  <div class="loading d-none d-flex justify-content-center" id="loading">
+    <span class="loader"></span>
+  </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>
